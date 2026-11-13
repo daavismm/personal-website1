@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dāvis — personal portfolio, projects, skills and contact information.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Dāvis — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0b1220",
+            panel: "#111c2e",
+            emerald: "#34d399",
+            muted: "#9aa9bd"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            display: ["Manrope", "sans-serif"]
+          },
+          boxShadow: {
+            glow: "0 0 50px rgba(52, 211, 153, .12)"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-ink text-slate-100 font-sans antialiased selection:bg-emerald selection:text-ink">
+  <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div class="absolute -top-48 -right-24 h-[34rem] w-[34rem] rounded-full bg-emerald/10 blur-[130px]"></div>
+    <div class="absolute top-[45rem] -left-48 h-[30rem] w-[30rem] rounded-full bg-cyan-500/5 blur-[130px]"></div>
+    <div class="absolute inset-0 grid-pattern opacity-40"></div>
+  </div>
+
+  <header class="fixed top-0 z-50 w-full border-b border-white/5 bg-ink/75 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
+      <a href="#home" class="font-display text-xl font-extrabold tracking-tight">Dāvis<span class="text-emerald">.</span></a>
+      <button id="menu-toggle" class="rounded-xl border border-white/10 p-2 text-slate-200 md:hidden" aria-label="Open navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div id="nav-menu" class="absolute left-0 right-0 top-full hidden flex-col gap-1 border-b border-white/10 bg-ink/95 p-4 backdrop-blur-xl md:static md:flex md:flex-row md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="rounded-full bg-emerald px-5 py-2.5 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:bg-emerald-300" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="mx-auto flex min-h-screen max-w-6xl items-center px-5 pb-20 pt-32 lg:px-8">
+      <div class="grid w-full items-center gap-14 lg:grid-cols-[1.3fr_.7fr]">
+        <div class="reveal">
+          <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-emerald/20 bg-emerald/5 px-4 py-2 text-sm font-semibold text-emerald">
+            <span class="h-2 w-2 animate-pulse rounded-full bg-emerald"></span>
+            STUDENT · CREATIVE THINKER · BUILDER
+          </div>
+          <p class="mb-4 text-lg text-muted">Hello, my name is</p>
+          <h1 class="font-display text-5xl font-extrabold leading-[1.06] tracking-tight sm:text-6xl lg:text-7xl">Dāvis<span class="text-emerald">.</span><br><span class="text-slate-300">I turn ideas into</span><br>digital experiences.</h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-muted">I’m an International Business and Sustainable Economics student interested in business, technology, marketing and the ways digital tools can make everyday work better.</p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#projects" class="rounded-full bg-emerald px-7 py-3.5 font-bold text-ink transition hover:-translate-y-1 hover:shadow-glow">Explore my work <span aria-hidden="true">↗</span></a>
+            <a href="#about" class="rounded-full border border-white/15 px-7 py-3.5 font-semibold text-white transition hover:border-emerald/60 hover:bg-white/5">About me</a>
+          </div>
+          <div class="mt-14 flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted">
+            <span class="flex items-center gap-2"><span class="text-emerald">✦</span> Curious by nature</span>
+            <span class="flex items-center gap-2"><span class="text-emerald">✦</span> Always learning</span>
+            <span class="flex items-center gap-2"><span class="text-emerald">✦</span> Open to opportunities</span>
+          </div>
+        </div>
+        <div class="reveal relative mx-auto w-full max-w-sm">
+          <div class="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-emerald/20 via-cyan-400/5 to-transparent blur-2xl"></div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-panel p-7 shadow-2xl">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-[.22em] text-muted">A little about me</span>
+              <span class="text-emerald">✳</span>
+            </div>
+            <div class="my-10 flex h-48 items-center justify-center rounded-2xl border border-emerald/15 bg-gradient-to-br from-emerald/10 to-cyan-500/5">
+              <div class="flex h-32 w-32 items-center justify-center rounded-full border border-emerald/30 bg-ink text-6xl font-extrabold text-emerald shadow-glow">D.</div>
+            </div>
+            <div class="space-y-4">
+              <div><p class="text-sm text-muted">Currently studying</p><p class="mt-1 font-semibold">International Business & Sustainable Economics</p></div>
+              <div class="h-px bg-white/10"></div>
+              <div><p class="text-sm text-muted">Interests</p><p class="mt-1 font-semibold">Business · Technology · Marketing</p></div>
+              <div class="h-px bg-white/10"></div>
+              <div><p class="text-sm text-muted">Based in</p><p class="mt-1 font-semibold">Riga, Latvia</p></div>
+            </div>
+          </div>
+          <div class="absolute -bottom-5 -left-8 hidden rounded-2xl border border-white/10 bg-panel px-5 py-3 shadow-xl sm:block"><span class="text-sm text-muted">Learning every day</span><span class="ml-2 text-emerald">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT</p><h2 class="section-title">A bit about <span class="gradient-text">me.</span></h2></div>
+      <div class="grid gap-8 md:grid-cols-[1.1fr_.9fr]">
+        <div class="reveal rounded-3xl border border-white/10 bg-panel/70 p-8">
+          <h3 class="font-display text-2xl font-bold">Curiosity is my starting point.</h3>
+          <p class="mt-5 leading-8 text-muted">I’m a university student building a foundation in international business and sustainable economics. I enjoy exploring how companies grow, how people make decisions and how technology can create useful solutions.</p>
+          <p class="mt-4 leading-8 text-muted">This portfolio is a place to present my learning journey, showcase projects and connect with people who are interested in new ideas.</p>
+        </div>
+        <div class="reveal grid gap-4 sm:grid-cols-2">
+          <div class="info-card"><span class="card-icon">◎</span><h3>Business mindset</h3><p>Understanding markets, customers and opportunities.</p></div>
+          <div class="info-card"><span class="card-icon">⌘</span><h3>Digital curiosity</h3><p>Exploring tools and technology that solve problems.</p></div>
+          <div class="info-card"><span class="card-icon">↗</span><h3>Growth focused</h3><p>Learning through practice, feedback and iteration.</p></div>
+          <div class="info-card"><span class="card-icon">♧</span><h3>Sustainability</h3><p>Thinking about long-term value and responsible growth.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">02 / SKILLS</p><h2 class="section-title">What I’m <span class="gradient-text">developing.</span></h2><p class="section-description">A growing toolkit shaped by university studies, personal projects and hands-on learning.</p></div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="skill-card reveal"><span class="skill-number">01</span><h3>Business & Strategy</h3><p>Business fundamentals, strategic thinking and market awareness.</p><div class="skill-line"><span style="width:78%"></span></div></div>
+        <div class="skill-card reveal"><span class="skill-number">02</span><h3>Research & Analysis</h3><p>Finding information, evaluating sources and structuring insights.</p><div class="skill-line"><span style="width:72%"></span></div></div>
+        <div class="skill-card reveal"><span class="skill-number">03</span><h3>Communication</h3><p>Presenting ideas clearly and adapting messages to an audience.</p><div class="skill-line"><span style="width:80%"></span></div></div>
+        <div class="skill-card reveal"><span class="skill-number">04</span><h3>Digital Tools</h3><p>Using modern software and AI tools to improve workflows.</p><div class="skill-line"><span style="width:75%"></span></div></div>
+        <div class="skill-card reveal"><span class="skill-number">05</span><h3>Marketing</h3><p>Exploring branding, customer needs and digital marketing basics.</p><div class="skill-line"><span style="width:70%"></span></div></div>
+        <div class="skill-card reveal"><span class="skill-number">06</span><h3>Web Fundamentals</h3><p>Learning HTML, CSS, responsive layouts and website publishing.</p><div class="skill-line"><span style="width:62%"></span></div></div>
+      </div>
+      <p class="mt-5 text-xs text-muted">Note: skill indicators are illustrative, not formal test scores.</p>
+    </section>
+
+    <section id="projects" class="section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">03 / SELECTED WORK</p><h2 class="section-title">Projects & <span class="gradient-text">experiments.</span></h2><p class="section-description">A selection of academic and personal work. Replace the sample descriptions with your finished projects as you build them.</p></div>
+      <div class="grid gap-5 lg:grid-cols-3">
+        <article class="project-card reveal"><div class="project-visual visual-one"><span>01</span><div class="visual-shape">↗</div></div><div class="p-6"><p class="eyebrow">ACADEMIC RESEARCH</p><h3>AI & Employee Productivity</h3><p class="mt-3 text-sm leading-7 text-muted">Exploring how artificial intelligence can change workplace productivity, business processes and employee experiences.</p><div class="mt-5 flex flex-wrap gap-2"><span class="tag">Research</span><span class="tag">AI</span><span class="tag">Business</span></div></div></article>
+        <article class="project-card reveal"><div class="project-visual visual-two"><span>02</span><div class="visual-shape">◈</div></div><div class="p-6"><p class="eyebrow">MARKETING PROJECT</p><h3>BMW 3 Series Analysis</h3><p class="mt-3 text-sm leading-7 text-muted">A marketing-focused look at a well-known automotive product, its positioning, audience and brand identity.</p><div class="mt-5 flex flex-wrap gap-2"><span class="tag">Marketing</span><span class="tag">Brand</span><span class="tag">Analysis</span></div></div></article>
+        <article class="project-card reveal"><div class="project-visual visual-three"><span>03</span><div class="visual-shape">✳</div></div><div class="p-6"><p class="eyebrow">WEB DEVELOPMENT</p><h3>Personal Portfolio</h3><p class="mt-3 text-sm leading-7 text-muted">This responsive one-page website, created to present my background, interests and projects online.</p><div class="mt-5 flex flex-wrap gap-2"><span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">JavaScript</span></div></div></article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">04 / JOURNEY</p><h2 class="section-title">Education & <span class="gradient-text">experience.</span></h2></div>
+      <div class="relative ml-2 space-y-8 border-l border-emerald/25 pl-8">
+        <div class="timeline-item reveal"><span class="timeline-dot"></span><p class="eyebrow">CURRENT</p><h3>International Business & Sustainable Economics</h3><p class="mt-1 text-sm text-emerald">University studies · Riga, Latvia</p><p class="mt-3 max-w-2xl leading-7 text-muted">Developing knowledge of international business, economics, sustainability and the global business environment.</p></div>
+        <div class="timeline-item reveal"><span class="timeline-dot"></span><p class="eyebrow">ACADEMIC INTEREST</p><h3>Technology, AI & business productivity</h3><p class="mt-1 text-sm text-emerald">Research and independent learning</p><p class="mt-3 max-w-2xl leading-7 text-muted">Exploring the practical impact of digital technologies on people, organizations and the future of work.</p></div>
+        <div class="timeline-item reveal"><span class="timeline-dot"></span><p class="eyebrow">CONTINUOUS LEARNING</p><h3>Personal projects & new skills</h3><p class="mt-1 text-sm text-emerald">Ongoing</p><p class="mt-3 max-w-2xl leading-7 text-muted">Building practical skills through small projects, experimentation and learning by doing.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-wrap pb-28">
+      <div class="rounded-[2rem] border border-emerald/20 bg-gradient-to-br from-emerald/10 via-panel to-panel p-8 shadow-glow md:p-12">
+        <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+          <div class="reveal"><p class="eyebrow">05 / CONTACT</p><h2 class="mt-4 font-display text-4xl font-extrabold leading-tight sm:text-5xl">Let’s start a <span class="gradient-text">conversation.</span></h2><p class="mt-5 leading-8 text-muted">Have a project idea, an opportunity or just want to connect? Send me a message.</p><p class="mt-8 text-sm text-muted">Email</p><a id="email-link" class="mt-1 inline-block font-semibold text-emerald hover:underline" href="mailto:daavismm@gmail.com">daavismm@gmail.com</a><p class="mt-2 text-xs text-muted">Replace this with your real email address.</p></div>
+          <form id="contact-form" class="reveal space-y-4">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="form-label">Your name<input name="name" required autocomplete="name" placeholder="Name" class="form-input"></label>
+              <label class="form-label">Your email<input name="email" type="email" required autocomplete="email" placeholder="name@example.com" class="form-input"></label>
+            </div>
+            <label class="form-label">Subject<input name="subject" required placeholder="What would you like to discuss?" class="form-input"></label>
+            <label class="form-label">Message<textarea name="message" required rows="5" placeholder="Write your message..." class="form-input resize-y"></textarea></label>
+            <button class="rounded-full bg-emerald px-7 py-3.5 font-bold text-ink transition hover:-translate-y-0.5 hover:bg-emerald-300" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
+            <p id="form-status" class="text-sm text-muted" role="status">The form opens your email app with the message prepared. To send messages directly from the website, connect Formspree after publishing.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <p>© <span id="year"></span> Dāvis. Built with curiosity and care.</p>
+      <a href="#home" class="transition hover:text-emerald">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
